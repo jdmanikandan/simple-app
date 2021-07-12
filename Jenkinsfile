@@ -15,6 +15,7 @@ pipeline {
             git 'https://github.com/jdmanikandan/simple-app.git'
 
             // Run Maven on a Unix agent.
+            chmod +x mvnw
             sh "./mvnw -Dmaven.test.failure.ignore=true clean package"
 
             // To run Maven on a Windows agent, use
