@@ -16,11 +16,10 @@ pipeline {
 
             // Run Maven on a Unix agent.
             sh "chmod +x mvnw"
-<<<<<<< HEAD:jenkinsfile
             sh "./mvnw -Dmaven.test.failure.ignore=true clean package"
-=======
+
            sh "./mvnw -Dmaven.test.failure.ignore=true clean package"
->>>>>>> 966a1f79adcc8e099fa0dbda3b28f4282ac8d1cb:Jenkinsfile
+
 
             // To run Maven on a Windows agent, use
            // bat "mvn -Dmaven.test.failure.ignore=true clean package"
